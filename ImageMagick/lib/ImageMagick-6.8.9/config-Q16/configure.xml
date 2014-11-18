@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuremap [
+<!ELEMENT configuremap (configure)+>
+<!ELEMENT configure (#PCDATA)>
+<!ATTLIST configure name CDATA #REQUIRED>
+<!ATTLIST configure value CDATA #REQUIRED>
+]>
+<configuremap>
+  <configure name="CC" value="gcc"/>
+  <configure name="CFLAGS" value="-D_THREAD_SAFE -D_THREAD_SAFE -pthread -mmacosx-version-min=10.5 -Wall -march=core2 -fexceptions -D_FORTIFY_SOURCE=0 -D_THREAD_SAFE -pthread -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16"/>
+  <configure name="CODER_PATH" value="/opt/ImageMagick/lib/ImageMagick-6.8.9/modules-Q16/coders"/>
+  <configure name="CONFIGURE_PATH" value="/opt/ImageMagick/etc/ImageMagick-6/"/>
+  <configure name="CONFIGURE" value="./configure  '--prefix' '/opt/ImageMagick' '--enable-delegate-build' '--enable-opencl' '--without-x' '--without-freetype' '--disable-static' 'CFLAGS=-mmacosx-version-min=10.5'"/>
+  <configure name="COPYRIGHT" value="Copyright (C) 1999-2014 ImageMagick Studio LLC"/>
+  <configure name="CPPFLAGS" value="-I/opt/ImageMagick/include/ImageMagick-6"/>
+  <configure name="CXXFLAGS" value="-g -O2 -D_THREAD_SAFE -pthread"/>
+  <configure name="CXX" value="g++"/>
+  <configure name="DEFS" value="-DHAVE_CONFIG_H"/>
+  <configure name="DELEGATES" value="bzlib mpeg fftw jng jpeg lcms lzma png ps tiff webp xml zlib"/>
+  <configure name="DISTCHECK_CONFIG_FLAGS" value="'CFLAGS=-mmacosx-version-min=10.5' --disable-deprecated --with-quantum-depth=16 --with-umem=no --with-autotrace=no --with-freetype=no --with-gslib=no --with-fontpath= --with-gvc=no --with-rsvg=no --with-wmf=no --with-perl=no"/>
+  <configure name="DOCUMENTATION_PATH" value="/opt/ImageMagick/share/doc/ImageMagick-6"/>
+  <configure name="EXEC-PREFIX" value="/opt/ImageMagick"/>
+  <configure name="EXECUTABLE_PATH" value="/opt/ImageMagick/bin"/>
+  <configure name="FEATURES" value="DPC OpenCL"/>
+  <configure name="FILTER_PATH" value="/opt/ImageMagick/lib/ImageMagick-6.8.9/modules-Q16/filters"/>
+  <configure name="HOST" value="x86_64-apple-darwin14.0.0"/>
+  <configure name="INCLUDE_PATH" value="/opt/ImageMagick/include/ImageMagick-6"/>
+  <configure name="LDFLAGS" value="-L/opt/ImageMagick/lib -L/Users/karlvr/Development/ImageMagick/ImageMagick-6.8.9-9/fftw/.libs -L/Users/karlvr/Development/ImageMagick/ImageMagick-6.8.9-9/fftw -L/Users/karlvr/Development/ImageMagick/ImageMagick-6.8.9-9/jp2 -L/Users/karlvr/Development/ImageMagick/ImageMagick-6.8.9-9/jpeg/.libs -L/Users/karlvr/Development/ImageMagick/ImageMagick-6.8.9-9/jpeg -L/Users/karlvr/Development/ImageMagick/ImageMagick-6.8.9-9/lcms/src/.libs -L/Users/karlvr/Development/ImageMagick/ImageMagick-6.8.9-9/lcms/src -L/Users/karlvr/Development/ImageMagick/ImageMagick-6.8.9-9/lzma/.libs -L/Users/karlvr/Development/ImageMagick/ImageMagick-6.8.9-9/lzma -L/Users/karlvr/Development/ImageMagick/ImageMagick-6.8.9-9/magick -L/Users/karlvr/Development/ImageMagick/ImageMagick-6.8.9-9/png/.libs -L/Users/karlvr/Development/ImageMagick/ImageMagick-6.8.9-9/png -L/Users/karlvr/Development/ImageMagick/ImageMagick-6.8.9-9/tiff/libtiff/.libs -L/Users/karlvr/Development/ImageMagick/ImageMagick-6.8.9-9/tiff/libtiff -L/Users/karlvr/Development/ImageMagick/ImageMagick-6.8.9-9/wand -L/Users/karlvr/Development/ImageMagick/ImageMagick-6.8.9-9/webp/.libs -L/Users/karlvr/Development/ImageMagick/ImageMagick-6.8.9-9/webp -L/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib"/>
+  <configure name="LIBRARY_PATH" value="/opt/ImageMagick/lib/ImageMagick-6.8.9"/>
+  <configure name="LIBS" value="-llcms -ltiff -ljpeg -lpng15 -lfftw3 -lwebp -L/usr/local/Cellar/xz/5.0.7/lib -llzma -lbz2 -lxml2 -lz -lm -Wl,-framework,OpenCL -lm"/>
+  <configure name="LIB_VERSION_NUMBER" value="6,8,9,9"/>
+  <configure name="LIB_VERSION" value="0x689"/>
+  <configure name="NAME" value="ImageMagick"/>
+  <configure name="PCFLAGS" value="-DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16"/>
+  <configure name="PREFIX" value="/opt/ImageMagick"/>
+  <configure name="QuantumDepth" value="16"/>
+  <configure name="RELEASE_DATE" value="2014-10-29"/>
+  <configure name="SHAREARCH_PATH" value="/opt/ImageMagick/lib/ImageMagick-6.8.9/config-Q16"/>
+  <configure name="SHARE_PATH" value="/opt/ImageMagick/share/ImageMagick-6"/>
+  <configure name="SVN_REVISION" value="16820" />
+  <configure name="TARGET_CPU" value="x86_64"/>
+  <configure name="TARGET_OS" value="darwin14.0.0"/>
+  <configure name="TARGET_VENDOR" value="apple"/>
+  <configure name="VERSION" value="6.8.9"/>
+  <configure name="WEBSITE" value="http://www.imagemagick.org"/>
+</configuremap>
